@@ -3,10 +3,12 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary-light: #fff;
-  --color-secondary-light: #000;
-  --color-primary-dark: #000;
-  --color-secondary-dark: #fff;
+  --color-primary-light: oklch(98.5% 0 0);
+  --color-secondary-light: oklch(14.5% 0 0);
+  --color-tertiary-light: oklch(63.7% 0.237 25.331);
+  --color-primary-dark: oklch(14.5% 0 0);
+  --color-secondary-dark: oklch(98.5% 0 0);
+  --color-tertiary-dark: oklch(63.7% 0.237 25.331);
 }
 
 * {
