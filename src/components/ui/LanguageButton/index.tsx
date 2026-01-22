@@ -8,19 +8,26 @@ const LanguageButton = () => {
 		const newLang = i18n.language === 'pt' ? 'en' : 'pt';
 		i18n.changeLanguage(newLang);
 	}
+
 	return (
 		<Button
 			type='button'
-			className='cursor-pointer bg-primary-dark hover:bg-primary-dark dark:bg-primary-light 
-             dark:hover:bg-primary-light relative border-2 border-black dark:border-white flex gap-2 items-center justify-center'
+			className='cursor-pointer   
+               flex gap-2 items-center justify-center bg-transparent hover:bg-black/20 text-black border-2 border-black
+			   dark:bg-white/5 dark:hover:bg-white/10 dark:text-white'
 			onClick={toggleLanguage}
 		>
-			<span className='z-10'>PT</span>
-			<span className='z-10'>|</span>
-			<span className='z-10'>EN</span>
-			<div
-				className={`absolute h-full bg-bl w-1/2 bg-white/20 dark:bg-black/70 rounded-md transition-transform duration-300 ease-in-out left-0 ${i18n.language === 'pt' ? 'translate-x-0' : 'translate-x-full'}`}
-			></div>
+			<span
+				className={`transition-opacity ${i18n.language === 'pt' ? 'opacity-100' : 'opacity-40'}`}
+			>
+				PT
+			</span>
+			<span className='dark:text-white/30'>|</span>
+			<span
+				className={`transition-opacity ${i18n.language === 'en' ? 'opacity-100' : 'opacity-40'}`}
+			>
+				EN
+			</span>
 		</Button>
 	);
 };
