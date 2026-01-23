@@ -60,12 +60,12 @@ const ShortenerForm = () => {
 			)}
 
 			{mutation.isError && (
-				<span className='text-tertiary-light mt-2'>
+				<span className='text-tertiary-light mt-2 text-center'>
 					{t('errorRequest')}
 				</span>
 			)}
 			{error && (
-				<span className='text-tertiary-light mt-2'>
+				<span className='text-tertiary-light mt-2 text-center'>
 					{t('errorLinkInvalid')}
 				</span>
 			)}
