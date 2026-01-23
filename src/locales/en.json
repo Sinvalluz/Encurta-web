@@ -6,5 +6,7 @@
   "btnIsPending": "Shortening",
   "messageShortedLink": "Your shortened URL:",
   "errorLinkInvalid": "Enter a valid URL",
-  "errorRequest": "Error while trying to shorten the link"
+  "errorRequest": "Error while trying to shorten the link",
+  "messageCopy": "Link copied!!",
+  "redirecting": "🔗 Redirecting..."
 }

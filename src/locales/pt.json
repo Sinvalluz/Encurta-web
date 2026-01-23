@@ -6,5 +6,7 @@
   "btnIsPending": "Encurtando",
   "messageShortedLink": "Seu URL encurtado:",
   "errorLinkInvalid": "Digite uma URL válida",
-  "errorRequest": "Erro ao tentar encurtar o link"
+  "errorRequest": "Erro ao tentar encurtar o link",
+  "messageCopy": "Link copiado!!",
+  "redirecting": "🔗 Redirecionando..."
 }

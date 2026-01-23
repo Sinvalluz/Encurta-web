@@ -34,27 +34,31 @@ const ShortenerForm = () => {
 		}
 	}
 	return (
-		<form
-			onSubmit={onSubmit}
-			className='text-center'
-		>
-			<div className='flex flex-col gap-2 md:flex-row mb-2.5'>
-				<Input
-					placeholder={t('placeholder')}
-					type='text'
-					className='border-2 border-secondary-light dark:text-secondary-dark'
-					value={url}
-					onChange={(e) => setUrl(e.target.value)}
-					required
-				/>
-				<Button
-					className='flex-1 bg-tertiary-light text-primary-light dark:text-secondary-dark cursor-pointer hover:bg-red-400'
-					disabled={mutation.isPending}
-				>
-					{mutation.isPending ? t('btnIsPending') : t('btnSubmit')}
-				</Button>
-			</div>
-
+		<div>
+			<form
+				onSubmit={onSubmit}
+				className='text-center'
+			>
+				<div className='flex flex-col gap-2 md:flex-row mb-2.5'>
+					<Input
+						placeholder={t('placeholder')}
+						type='text'
+						className='border-2 border-secondary-light dark:text-secondary-dark'
+						value={url}
+						onChange={(e) => setUrl(e.target.value)}
+						required
+					/>
+					<Button
+						className='flex-1 bg-tertiary-light text-primary-light dark:text-secondary-dark cursor-pointer hover:bg-red-400'
+						disabled={mutation.isPending}
+						type='submit'
+					>
+						{mutation.isPending
+							? t('btnIsPending')
+							: t('btnSubmit')}
+					</Button>
+				</div>
+			</form>
 			{mutation.isSuccess && (
 				<CardUrlShorted url={mutation.data?.data.shortCode} />
 			)}
@@ -69,7 +73,7 @@ const ShortenerForm = () => {
 					{t('errorLinkInvalid')}
 				</span>
 			)}
-		</form>
+		</div>
 	);
 };
 
