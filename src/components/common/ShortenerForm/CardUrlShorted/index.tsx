@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 
 type CardUrlShortedProps = {
-	url: string;
+	url?: string;
 };
 
 const CardUrlShorted = ({ url }: CardUrlShortedProps) => {
@@ -15,7 +15,7 @@ const CardUrlShorted = ({ url }: CardUrlShortedProps) => {
 			</p>
 			<div className='flex items-center justify-between gap-3 '>
 				<span className='text-sm truncate flex-1 text-secondary-light dark:text-secondary-dark'>
-					{url}
+					http://localhost:5173/{url}
 				</span>
 
 				<div className='flex gap-2 shrink-0 '>

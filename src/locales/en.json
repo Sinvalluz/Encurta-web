@@ -3,5 +3,8 @@
   "description": "Transform long, complex URLs into short, shareable links that are perfect for social media, emails, and more.",
   "placeholder": "Enter your long URL here (e.g., https://example.com/very/long/path)",
   "btnSubmit": "Shorten URL",
-  "messageShortedLink": "Your shortened URL:"
+  "btnIsPending": "Shortening",
+  "messageShortedLink": "Your shortened URL:",
+  "errorLinkInvalid": "Enter a valid URL",
+  "errorRequest": "Error while trying to shorten the link"
 }

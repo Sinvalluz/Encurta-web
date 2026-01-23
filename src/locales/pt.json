@@ -3,5 +3,8 @@
   "description": "Transforme URLs longas e complexas em links curtos e fáceis de compartilhar, perfeitos para redes sociais, e-mails e muito mais.",
   "placeholder": "Insira aqui seu URL longo (por exemplo, https://example.com/very/long/path)",
   "btnSubmit": "Encurtar URL",
-  "messageShortedLink": "Seu URL encurtado:"
+  "btnIsPending": "Encurtando",
+  "messageShortedLink": "Seu URL encurtado:",
+  "errorLinkInvalid": "Digite uma URL válida",
+  "errorRequest": "Erro ao tentar encurtar o link"
 }
